@@ -15,10 +15,14 @@
     <button onclick="alert_display('none')">닫기</button>
     <button onclick="alert_display('block','아이디')">버튼1</button>
     <button onclick="alert_display('block','비밀번호')">버튼2</button>
+    <button id="close">X</button>
     
 </body>
 
 <script>
+    document.getElementById('close').addEventListener('click', function() {
+        document.getElementById('alert').style.display = 'none';
+    });
     document.getElementById('hello').innerHTML = '안녕';
     document.getElementById('hi').innerHTML = '올 때 바밤바';
     document.getElementById('hello').style.fontSize = '30px';
