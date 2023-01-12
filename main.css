@@ -5,3 +5,7 @@
     border-radius: 5px;
     display: none;
 }
+
+.yellow_bg {
+    background: yellow;
+}
