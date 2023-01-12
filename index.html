@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="hi">올 때 메로나</h2>
+
+    <div class="alert-box" id="alert">Alert 박스</div>
+    <button onclick="document.getElementById('alert').style.display = 'block';">버튼</button>
+</body>
+
+<script>
+    document.getElementById('hello').innerHTML = '안녕';
+    document.getElementById('hi').innerHTML = '올 때 바밤바';
+    document.getElementById('hello').style.fontSize = '30px';
+    document.getElementById('hi').style.fontSize = '30px';
+</script>
+</html>
