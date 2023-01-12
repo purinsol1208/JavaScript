@@ -11,8 +11,8 @@
     <h2 id="hi">올 때 메로나</h2>
 
     <div class="alert-box" id="alert">Alert 박스</div>
-    <button onclick="document.getElementById('alert').style.display = 'block';">버튼</button>
-    <button onclick="document.getElementById('alert').style.display = 'none';">닫기</button>
+    <button onclick="display_open()">버튼</button>
+    <button onclick="display_close()">닫기</button>
 </body>
 
 <script>
@@ -20,5 +20,13 @@
     document.getElementById('hi').innerHTML = '올 때 바밤바';
     document.getElementById('hello').style.fontSize = '30px';
     document.getElementById('hi').style.fontSize = '30px';
+
+    function display_open() {
+        document.getElementById('alert').style.display = 'block';
+    }
+
+    function display_close() {
+        document.getElementById('alert').style.display = 'none';
+    }
 </script>
 </html>
