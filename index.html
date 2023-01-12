@@ -11,8 +11,11 @@
     <h2 id="hi">올 때 메로나</h2>
 
     <div class="alert-box" id="alert">Alert 박스</div>
-    <button onclick="display('display')">버튼</button>
-    <button onclick="display('none')">닫기</button>
+    <button onclick="alert_display('block')">버튼</button>
+    <button onclick="alert_display('none')">닫기</button>
+    <button onclick="alert_display('block','아이디')">버튼1</button>
+    <button onclick="alert_display('block','비밀번호')">버튼2</button>
+    
 </body>
 
 <script>
@@ -21,8 +24,10 @@
     document.getElementById('hello').style.fontSize = '30px';
     document.getElementById('hi').style.fontSize = '30px';
 
-    function display(temp) {
+    function alert_display(temp, temp2) {
         document.getElementById('alert').style.display = temp;
+        document.getElementById('alert').innerHTML = temp2 + '를 입력하시오';
     }
+
 </script>
 </html>
