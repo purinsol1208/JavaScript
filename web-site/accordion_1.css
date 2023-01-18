@@ -15,14 +15,30 @@ html, body {
 .panel-faq-answer {
     /*padding: 15px;
       display: none;*/
-      /*height: 0px;
-      overflow: hidden; */
+      height: 0px;
+      overflow: hidden;
 }
 
+#btn-all-close {
+    margin-bottom: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer; 
+    /*마우스 가져다대면 마우스 모양 바꿈, 손가락으로*/
+    padding: 10px 25px;
+    float: right;
+}
+
+/*마우스 포인터 가져다 댔을 때*/
 #btn-all-close:hover {
+    background-color: red;
+    color: white;
+    transition: all .35s;
 
 }
 
 .active {
-
+    display: block;
+    height: 300px;
 }
