@@ -3,8 +3,10 @@ html, body {
     margin: 0;
 }
 
-.panel-faq.container {
-    margin-bottom: -10px;
+.panel-faq-container {
+    border: 0px solid red;
+    padding-bottom: -16px;
+    margin-bottom: -15px;
 }
 
 .panel-faq-title {
@@ -17,6 +19,7 @@ html, body {
       display: none;*/
       height: 0px;
       overflow: hidden;
+      /*변화가 시작되는 쪽에서 애니메이션 이펙트를 붙여줘야 함*/
 }
 
 #btn-all-close {
